@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="id" class="dark"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="theme-color" content="#0b0e14">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="ManhwaKu">
-  <meta name="description" content="Aplikasi PWA Offline Manhwa &amp; Webtoon Reader dengan Pemutar Musik Latar Sinematik &amp; Penyimpanan Lokal IndexedDB.">
-  <title>ManhwaKu — Offline Manhwa &amp; Webtoon Reader</title>
+<html lang="id" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#0b0e14" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ManhwaKu" />
+  <meta name="description" content="Aplikasi PWA Offline Manhwa & Webtoon Reader dengan Pemutar Musik Latar Sinematik & Penyimpanan Lokal IndexedDB." />
+  <title>ManhwaKu — Offline Manhwa & Webtoon Reader</title>
 
   <style>
     /* =========================================================================
@@ -990,7 +991,7 @@
       border-color: var(--accent-pink);
     }
   </style>
-<link rel="manifest" href="./manifest.json"></head>
+</head>
 <body>
 
   <!-- ==================== TOAST NOTIFICATION CONTAINER ==================== -->
@@ -1005,7 +1006,7 @@
         <div class="brand-box" onclick="app.showHome()">
           <div class="brand-logo">
             <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#ffffff" stroke-width="2.2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
             </svg>
           </div>
           <div>
@@ -1019,21 +1020,21 @@
           <!-- Status Koneksi -->
           <div id="network-badge" class="status-pill status-online">
             <span class="status-dot"></span>
-            <span id="network-text">Online • Offline Siap</span>
+            <span id="network-text">Offline Siap</span>
           </div>
 
           <!-- Kapasitas Penyimpanan -->
           <div class="storage-pill" title="Penyimpanan Lokal IndexedDB">
             <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="#818cf8" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
             </svg>
-            <span id="storage-text">78.8 MB / 10.1 GB</span>
+            <span id="storage-text">Menghitung...</span>
           </div>
 
           <!-- Tombol Studio Musik / BGM Offline -->
           <button onclick="app.openBgmLibraryModal()" class="btn btn-accent-soft" id="header-bgm-btn">
             <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
             </svg>
             <span id="header-bgm-label">Musik BGM</span>
           </button>
@@ -1041,7 +1042,7 @@
           <!-- Tombol Export File PWA -->
           <button onclick="app.openPwaModal()" class="btn btn-surface">
             <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
             <span>Export PWA</span>
           </button>
@@ -1049,7 +1050,7 @@
           <!-- Tombol Import Manhwa -->
           <button onclick="app.openImportModal()" class="btn btn-primary">
             <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
             </svg>
             <span>Import Manhwa</span>
           </button>
@@ -1062,28 +1063,28 @@
       <!-- Info Bar Mobile Storage -->
       <div class="mobile-storage-bar">
         <span>Penyimpanan Lokal (IndexedDB):</span>
-        <span id="storage-text-mobile" style="font-weight: 700; color: #a5b4fc;">78.8 MB / 10.1 GB</span>
+        <span id="storage-text-mobile" style="font-weight: 700; color: #a5b4fc;">Menghitung...</span>
       </div>
 
       <!-- Banner Lanjutkan Membaca -->
-      <section id="continue-reading-section" class="continue-banner">
+      <section id="continue-reading-section" class="continue-banner hidden">
         <div class="flex items-center gap-3" style="gap: 14px;">
           <div style="width: 48px; height: 48px; border-radius: 14px; background: rgba(99,102,241,0.18); border: 1px solid rgba(99,102,241,0.35); display: flex; align-items: center; justify-content: center; color: #818cf8; flex-shrink: 0;">
             <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
           <div>
             <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #f472b6;">Lanjutkan Membaca</span>
-            <h2 id="continue-series-title" style="margin: 2px 0; font-size: 17px; font-weight: 800; color: #ffffff;">Solo Leveling</h2>
-            <p id="continue-chapter-info" style="margin: 0; font-size: 13px; color: var(--text-secondary);">Chapter 0 • Progres 65%</p>
+            <h2 id="continue-series-title" style="margin: 2px 0; font-size: 17px; font-weight: 800; color: #ffffff;">Solo Ascension</h2>
+            <p id="continue-chapter-info" style="margin: 0; font-size: 13px; color: var(--text-secondary);">Chapter 1 • Progres 0%</p>
           </div>
         </div>
         <button id="continue-read-btn" class="btn btn-primary">
           <span>Lanjut Baca</span>
           <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
         </button>
       </section>
@@ -1099,59 +1100,27 @@
           <div class="flex items-center gap-2" style="gap: 8px; flex-wrap: wrap;">
             <div class="search-wrapper">
               <svg class="search-icon" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
-              <input id="search-series-input" type="text" placeholder="Cari judul manhwa..." oninput="app.renderSeriesList()" class="input-field search-input">
+              <input id="search-series-input" type="text" placeholder="Cari judul manhwa..." oninput="app.renderSeriesList()" class="input-field search-input" />
             </div>
 
             <button onclick="app.ensureDemoData(true)" title="Muat Ulang Contoh Manhwa Demo" class="btn btn-surface btn-icon">
               <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
               </svg>
             </button>
           </div>
         </div>
 
         <!-- Grid Kartu Seri Manhwa -->
-        <div id="series-grid" class="series-grid"><div class="series-card">
-            <div class="series-cover-box">
-              <img src="blob:null/fd182cb6-1896-477b-8361-5740ff118078" alt="Solo Leveling" class="series-cover-img">
-              <div class="series-cover-overlay"></div>
-              <span class="series-badge-ch">4 Ch</span>
-              
-                <span class="series-badge-bgm" title="Memiliki Musik Latar BGM">
-                  <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path></svg>
-                </span>
-              
-              <div class="series-card-title-wrap">
-                <h3 class="series-card-title">Solo Leveling</h3>
-              </div>
-            </div>
-            <div class="series-card-footer">
-              <span class="truncate">Koleksi Offline</span>
-              <span style="color: #818cf8; font-weight: 700; flex-shrink: 0;">Baca →</span>
-            </div>
-          </div><div class="series-card">
-            <div class="series-cover-box">
-              <img src="blob:null/be18409d-b30c-4dd7-bebe-483bf62bec11" alt="Solo Ascension" class="series-cover-img">
-              <div class="series-cover-overlay"></div>
-              <span class="series-badge-ch">1 Ch</span>
-              
-              <div class="series-card-title-wrap">
-                <h3 class="series-card-title">Solo Ascension</h3>
-              </div>
-            </div>
-            <div class="series-card-footer">
-              <span class="truncate">Studio ManhwaKu (Demo)</span>
-              <span style="color: #818cf8; font-weight: 700; flex-shrink: 0;">Baca →</span>
-            </div>
-          </div></div>
+        <div id="series-grid" class="series-grid"></div>
 
         <!-- Empty State -->
         <div id="empty-library-state" class="hidden" style="padding: 56px 20px; text-align: center; border-radius: 20px; background: var(--bg-surface); border: 1px dashed var(--border-strong);">
           <div style="width: 60px; height: 60px; margin: 0 auto 14px; border-radius: 16px; background: var(--bg-elevated); display: flex; align-items: center; justify-content: center; color: #818cf8;">
             <svg width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
             </svg>
           </div>
           <h3 style="margin: 0; font-size: 18px; font-weight: 700;">Pustaka Masih Kosong</h3>
@@ -1167,7 +1136,7 @@
       <div id="series-detail-view" class="hidden">
         <button onclick="app.showHome()" class="btn btn-surface" style="margin-bottom: 18px;">
           <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
           <span>Kembali ke Pustaka</span>
         </button>
@@ -1175,7 +1144,7 @@
         <!-- Header Detail Seri -->
         <div class="detail-hero">
           <div class="detail-cover">
-            <img id="detail-cover" src="" alt="Cover Seri">
+            <img id="detail-cover" src="" alt="Cover Seri" />
           </div>
           <div class="flex-1 flex flex-col justify-between">
             <div>
@@ -1202,7 +1171,7 @@
             <div class="flex items-center" style="gap: 10px;">
               <div style="width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, var(--accent-indigo), var(--accent-pink)); display: flex; align-items: center; justify-content: center; color: #fff;">
                 <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
                 </svg>
               </div>
               <div>
@@ -1218,15 +1187,12 @@
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; align-items: end;">
             <div>
               <label style="display: block; font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px;">Pilihan Musik Latar Default</label>
-              <select id="series-bgm-select" onchange="app.saveSeriesBgmPreference()" class="select-field">
-            <option value="__GLOBAL__">Ikuti Pemutar BGM Global</option>
-            <option value="__NONE__">Matikan Musik untuk Serial Ini</option>
-          <option value="preset_dungeon">🎵 Dark Dungeon &amp; Epic Tension</option><option value="preset_rainy">🎵 Melancholy &amp; Rainy Night</option><option value="preset_royal">🎵 Royal Intrigue &amp; Mystery</option><option value="audio_1795278320242_43t5">🎧 [Solo-Leveling] SymphonicSuite-Lv.1_128k</option></select>
+              <select id="series-bgm-select" onchange="app.saveSeriesBgmPreference()" class="select-field"></select>
             </div>
 
             <div class="flex items-center justify-between" style="gap: 10px; background: var(--bg-surface); padding: 9px 12px; border-radius: 12px; border: 1px solid var(--border-subtle);">
               <label class="flex items-center" style="gap: 8px; cursor: pointer; font-size: 13px; font-weight: 600; color: var(--text-primary);">
-                <input id="series-bgm-autoplay" type="checkbox" onchange="app.saveSeriesBgmPreference()" style="width: 17px; height: 17px; accent-color: var(--accent-pink); cursor: pointer;">
+                <input id="series-bgm-autoplay" type="checkbox" onchange="app.saveSeriesBgmPreference()" style="width: 17px; height: 17px; accent-color: var(--accent-pink); cursor: pointer;" />
                 <span>Putar otomatis saat baca</span>
               </label>
               <button onclick="app.previewSeriesBgm()" class="btn btn-pink" style="padding: 6px 12px; min-height: 32px; font-size: 12px;">
@@ -1254,7 +1220,7 @@
         <div class="flex items-center min-w-0" style="gap: 10px;">
           <button onclick="app.closeReader()" class="btn btn-elevated btn-icon" title="Tutup Pembaca">
             <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
           <div class="min-w-0">
@@ -1268,9 +1234,9 @@
             0%
           </span>
 
-          <button onclick="app.toggleReaderSettings()" class="btn btn-elevated btn-icon" title="Pengaturan Lebar &amp; Kecerahan">
+          <button onclick="app.toggleReaderSettings()" class="btn btn-elevated btn-icon" title="Pengaturan Lebar & Kecerahan">
             <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
             </svg>
           </button>
         </div>
@@ -1281,7 +1247,7 @@
         <div style="background: var(--bg-surface); padding: 14px; border-radius: 14px; border: 1px solid var(--border-subtle); font-size: 12px;">
           <div class="flex items-center justify-between" style="margin-bottom: 10px;">
             <span style="font-weight: 700;">Lebar Tampilan Baca</span>
-            <span id="width-value-label" style="font-weight: 700; color: #818cf8;">Fit Layar (100%)</span>
+            <span id="width-value-label" style="font-weight: 700; color: #818cf8;">Sedang (760px)</span>
           </div>
           <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-bottom: 12px;">
             <button onclick="app.setReaderWidth('100%', 'Fit Layar (100%)')" class="btn btn-elevated" style="padding: 7px 6px; min-height: 32px; font-size: 11px;">Fit Layar</button>
@@ -1290,7 +1256,7 @@
           </div>
           <div class="flex items-center" style="gap: 10px;">
             <span style="color: var(--text-secondary);">Kustom:</span>
-            <input id="reader-width-slider" type="range" min="320" max="1200" step="20" value="760" oninput="app.setReaderWidth(this.value + 'px', 'Kustom (' + this.value + 'px)')" class="flex-1">
+            <input id="reader-width-slider" type="range" min="320" max="1200" step="20" value="760" oninput="app.setReaderWidth(this.value + 'px', 'Kustom (' + this.value + 'px)')" class="flex-1" />
           </div>
         </div>
 
@@ -1300,14 +1266,14 @@
               <span style="font-weight: 700;">Kecerahan Layar</span>
               <span id="brightness-value-label" style="font-weight: 700; color: #818cf8;">100%</span>
             </div>
-            <input id="reader-brightness-slider" type="range" min="30" max="125" step="5" value="100" oninput="app.setReaderFilter()" class="w-full">
+            <input id="reader-brightness-slider" type="range" min="30" max="125" step="5" value="100" oninput="app.setReaderFilter()" class="w-full" />
           </div>
           <div>
             <div class="flex items-center justify-between" style="margin-bottom: 6px;">
               <span style="font-weight: 700;">Filter Hangat (Anti-Silau Malam)</span>
-              <span id="warmth-value-label" style="font-weight: 700; color: #fbbf24;">15%</span>
+              <span id="warmth-value-label" style="font-weight: 700; color: #fbbf24;">0%</span>
             </div>
-            <input id="reader-warmth-slider" type="range" min="0" max="50" step="5" value="0" oninput="app.setReaderFilter()" class="w-full">
+            <input id="reader-warmth-slider" type="range" min="0" max="50" step="5" value="0" oninput="app.setReaderFilter()" class="w-full" />
           </div>
         </div>
       </div>
@@ -1316,7 +1282,7 @@
     <!-- AREA SCROLL VERTIKAL UTAMA -->
     <div id="reader-scroll-container" class="reader-scroll-area">
       <div style="width: 100%; min-height: 100%; display: flex; flex-direction: column; align-items: center;">
-        <div id="reader-strip" style="max-width: 100%; width: 100%; filter: brightness(100%) sepia(15%);"></div>
+        <div id="reader-strip" style="max-width: 760px; width: 100%;"></div>
 
         <!-- Navigasi Akhir Chapter -->
         <div style="width: 100%; max-width: 680px; margin: 0 auto; padding: 48px 16px 110px; text-align: center;">
@@ -1327,13 +1293,13 @@
 
             <div style="margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px;">
               <button id="footer-prev-btn" onclick="app.navigateChapter(-1)" class="btn btn-elevated">
-                ← Ch. Sebelumnya
+                &larr; Ch. Sebelumnya
               </button>
               <button onclick="app.scrollToTop()" class="btn btn-accent-soft">
-                ↑ Kembali ke Atas
+                &uarr; Kembali ke Atas
               </button>
               <button id="footer-next-btn" onclick="app.navigateChapter(1)" class="btn btn-primary">
-                Ch. Berikutnya →
+                Ch. Berikutnya &rarr;
               </button>
             </div>
           </div>
@@ -1349,7 +1315,7 @@
         <span class="eq-bar"></span>
         <span class="eq-bar"></span>
       </span>
-      <span id="floating-bgm-title" class="truncate">BGM • [Solo-Leveling] SymphonicSuite-Lv.1_128k</span>
+      <span id="floating-bgm-title" class="truncate">BGM Mati</span>
     </button>
 
     <!-- PANEL KONTROL AUDIO RINGKAS DI LAYAR BACA -->
@@ -1361,37 +1327,37 @@
         </div>
         <button onclick="app.toggleReaderBgmPanel(false)" class="btn btn-elevated btn-icon" style="min-width: 30px; min-height: 30px; padding: 4px;">
           <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
 
       <!-- Info Track Aktif -->
       <div style="padding: 10px 12px; border-radius: 12px; background: var(--bg-canvas); border: 1px solid var(--border-subtle); margin-bottom: 12px;">
-        <div id="reader-bgm-current-name" class="truncate" style="font-size: 13px; font-weight: 700; color: #ffffff;">[Solo-Leveling] SymphonicSuite-Lv.1_128k</div>
-        <div id="reader-bgm-current-sub" style="font-size: 11px; color: var(--text-secondary); margin-top: 2px;">Audio Offline • 5.7 MB</div>
+        <div id="reader-bgm-current-name" class="truncate" style="font-size: 13px; font-weight: 700; color: #ffffff;">Dark Dungeon &amp; Epic Tension</div>
+        <div id="reader-bgm-current-sub" style="font-size: 11px; color: var(--text-secondary); margin-top: 2px;">Preset Sinematik Web Audio API</div>
       </div>
 
       <!-- Tombol Transport: Prev, Play/Pause, Next -->
       <div class="flex items-center justify-center" style="gap: 12px; margin-bottom: 14px;">
         <button onclick="app.bgmPrevTrack()" class="btn btn-elevated btn-icon" title="Lagu Sebelumnya">
           <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path>
+            <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
           </svg>
         </button>
 
         <button id="reader-bgm-play-btn" onclick="app.bgmTogglePlay()" class="btn btn-pink" style="width: 48px; height: 48px; border-radius: 50%; padding: 0;" title="Putar / Jeda">
           <svg id="reader-bgm-icon-play" width="22" height="22" fill="currentColor" viewBox="0 0 24 24" style="margin-left: 2px;">
-            <path d="M8 5v14l11-7z"></path>
+            <path d="M8 5v14l11-7z" />
           </svg>
           <svg id="reader-bgm-icon-pause" class="hidden" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path>
+            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
           </svg>
         </button>
 
         <button onclick="app.bgmNextTrack()" class="btn btn-elevated btn-icon" title="Lagu Berikutnya">
           <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"></path>
+            <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" />
           </svg>
         </button>
       </div>
@@ -1399,20 +1365,20 @@
       <!-- Pemilih Sumber Musik -->
       <div style="margin-bottom: 12px;">
         <label style="display: block; font-size: 11px; font-weight: 600; color: var(--text-secondary); margin-bottom: 5px;">Pilih Musik Latar (Preset &amp; MP3 Offline)</label>
-        <select id="reader-bgm-select" onchange="app.bgmSelectTrack(this.value, true)" class="select-field" style="font-size: 12px; padding: 8px 10px;"><optgroup label="Musik Sinematik Bawaan (Web Audio API)"><option value="preset_dungeon">🎵 Dark Dungeon &amp; Epic Tension</option><option value="preset_rainy">🎵 Melancholy &amp; Rainy Night</option><option value="preset_royal">🎵 Royal Intrigue &amp; Mystery</option></optgroup><optgroup label="Lagu MP3/Audio Offline Saya"><option value="audio_1795278320242_43t5">🎧 [Solo-Leveling] SymphonicSuite-Lv.1_128k</option></optgroup></select>
+        <select id="reader-bgm-select" onchange="app.bgmSelectTrack(this.value, true)" class="select-field" style="font-size: 12px; padding: 8px 10px;"></select>
       </div>
 
       <!-- Slider Volume & Mute Cepat -->
       <div class="flex items-center" style="gap: 8px; margin-bottom: 12px;">
         <button id="reader-bgm-mute-btn" onclick="app.bgmToggleMute()" class="btn btn-elevated btn-icon" style="min-width: 34px; min-height: 34px; padding: 6px;" title="Mute / Unmute">
           <svg id="reader-bgm-icon-vol" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
           </svg>
           <svg id="reader-bgm-icon-muted" class="hidden" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#f43f5e" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15zM17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15zM17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
           </svg>
         </button>
-        <input id="reader-bgm-volume" type="range" min="0" max="100" value="70" oninput="app.bgmSetVolume(this.value)" class="flex-1">
+        <input id="reader-bgm-volume" type="range" min="0" max="100" value="70" oninput="app.bgmSetVolume(this.value)" class="flex-1" />
         <span id="reader-bgm-vol-label" style="font-size: 11px; font-weight: 700; color: #a5b4fc; width: 34px; text-align: right;">70%</span>
       </div>
 
@@ -1420,14 +1386,14 @@
       <div class="flex items-center justify-between" style="gap: 8px;">
         <button id="reader-bgm-loop-btn" onclick="app.bgmToggleLoopMode()" class="btn btn-surface" style="font-size: 11px; padding: 7px 10px; min-height: 34px; flex: 1;">
           <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
           </svg>
           <span id="reader-bgm-loop-label">Ulangi 1 Lagu</span>
         </button>
 
         <label class="btn btn-accent-soft" style="font-size: 11px; padding: 7px 10px; min-height: 34px; cursor: pointer;">
           <span>+ Tambah MP3</span>
-          <input type="file" accept="audio/*,.mp3,.wav,.ogg,.m4a" multiple="" class="hidden" onchange="app.handleAudioFilesUpload(this.files, true)">
+          <input type="file" accept="audio/*,.mp3,.wav,.ogg,.m4a" multiple class="hidden" onchange="app.handleAudioFilesUpload(this.files, true)" />
         </label>
       </div>
     </div>
@@ -1444,16 +1410,16 @@
     <div id="reader-hud-bottom" class="reader-hud-bottom">
       <div style="max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px;">
         <button id="hud-prev-btn" onclick="app.navigateChapter(-1)" class="btn btn-elevated" style="padding: 7px 12px; min-height: 34px; font-size: 12px;">
-          ← Seb.
+          &larr; Seb.
         </button>
 
         <div class="flex items-center flex-1" style="gap: 10px;">
           <span id="hud-page-counter" style="font-size: 11px; font-weight: 600; color: var(--text-secondary); white-space: nowrap;">Hal. 1 / 5</span>
-          <input id="reader-scrubber" type="range" min="0" max="100" value="0" oninput="app.scrubToPercent(this.value)" class="w-full">
+          <input id="reader-scrubber" type="range" min="0" max="100" value="0" oninput="app.scrubToPercent(this.value)" class="w-full" />
         </div>
 
         <button id="hud-next-btn" onclick="app.navigateChapter(1)" class="btn btn-elevated" style="padding: 7px 12px; min-height: 34px; font-size: 12px;">
-          Ber. →
+          Ber. &rarr;
         </button>
       </div>
     </div>
@@ -1466,7 +1432,7 @@
         <h3 style="margin: 0; font-size: 18px; font-weight: 800;">Import Chapter Offline</h3>
         <button onclick="app.closeImportModal()" class="btn btn-elevated btn-icon" style="min-width: 32px; min-height: 32px; padding: 4px;">
           <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
@@ -1482,22 +1448,23 @@
         <div id="new-series-fields" style="padding: 14px; border-radius: 14px; background: var(--bg-canvas); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 10px;">
           <div>
             <label style="display: block; font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 5px;">Judul Seri Manhwa *</label>
-            <input id="import-new-series-title" type="text" placeholder="Contoh: Omniscient Reader" class="input-field">
+            <input id="import-new-series-title" type="text" placeholder="Contoh: Omniscient Reader" class="input-field" />
           </div>
           <div>
             <label style="display: block; font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 5px;">Sinopsis Singkat (Opsional)</label>
-            <input id="import-new-series-desc" type="text" placeholder="Petualangan menaklukkan skenario misterius..." class="input-field">
+            <input id="import-new-series-desc" type="text" placeholder="Petualangan menaklukkan skenario misterius..." class="input-field" />
           </div>
         </div>
 
-        <div style="display: grid; grid-template-columns: 100px 1fr; gap: 10px;">
+        <!-- Tambahkan id="single-chapter-fields" -->
+        <div id="single-chapter-fields" style="display: grid; grid-template-columns: 100px 1fr; gap: 10px;">
           <div>
             <label style="display: block; font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 5px;">No. Chapter</label>
-            <input id="import-chapter-num" type="number" step="0.1" value="1" class="input-field">
+            <input id="import-chapter-num" type="number" step="0.1" value="1" class="input-field" />
           </div>
           <div>
             <label style="display: block; font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 5px;">Judul Chapter</label>
-            <input id="import-chapter-title" type="text" placeholder="Chapter 1" class="input-field">
+            <input id="import-chapter-title" type="text" placeholder="Chapter 1" class="input-field" />
           </div>
         </div>
 
@@ -1506,32 +1473,36 @@
           <div class="upload-grid">
             <label class="upload-tile">
               <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#818cf8" stroke-width="2" style="margin-bottom: 6px;">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
               <span style="font-size: 12px; font-weight: 700; color: #fff;">Pilih Gambar</span>
               <span style="font-size: 10px; color: var(--text-secondary);">JPG, PNG, WEBP</span>
-              <input id="file-input-images" type="file" accept="image/*" multiple="" class="hidden" onchange="app.handleFilesSelected(this.files, 'images')">
+              <input id="file-input-images" type="file" accept="image/*" multiple class="hidden" onchange="app.handleFilesSelected(this.files, 'images')" />
             </label>
 
             <label class="upload-tile">
               <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#818cf8" stroke-width="2" style="margin-bottom: 6px;">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
               </svg>
               <span style="font-size: 12px; font-weight: 700; color: #fff;">Pilih Folder</span>
               <span style="font-size: 10px; color: var(--text-secondary);">1 Folder Chapter</span>
-              <input id="file-input-folder" type="file" webkitdirectory="" directory="" multiple="" class="hidden" onchange="app.handleFilesSelected(this.files, 'folder')">
+              <input id="file-input-folder" type="file" webkitdirectory directory multiple class="hidden" onchange="app.handleFilesSelected(this.files, 'folder')" />
             </label>
 
+            <!-- Tambahkan atribut "multiple" pada input arsip CBZ/ZIP -->
             <label class="upload-tile">
               <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#f472b6" stroke-width="2" style="margin-bottom: 6px;">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
               </svg>
               <span style="font-size: 12px; font-weight: 700; color: #fff;">Arsip CBZ/ZIP</span>
-              <span style="font-size: 10px; color: var(--text-secondary);">Ekstrak Native</span>
-              <input id="file-input-archive" type="file" accept=".cbz,.zip,application/zip,application/x-cbz" class="hidden" onchange="app.handleFilesSelected(this.files, 'archive')">
+              <span style="font-size: 10px; color: var(--text-secondary);">1 atau Banyak File</span>
+              <input id="file-input-archive" type="file" accept=".cbz,.zip,application/zip,application/x-cbz" multiple class="hidden" onchange="app.handleFilesSelected(this.files, 'archive')" />
             </label>
           </div>
         </div>
+
+        <!-- Kontainer pratinjau daftar chapter saat mengunggah banyak ZIP sekaligus -->
+        <div id="batch-chapters-preview" class="hidden" style="max-height: 190px; overflow-y: auto; padding: 10px; border-radius: 12px; background: var(--bg-canvas); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 8px;"></div>
 
         <div id="selected-files-summary" class="hidden" style="padding: 10px 12px; border-radius: 12px; background: var(--accent-indigo-soft); border: 1px solid rgba(99,102,241,0.35); font-size: 12px; color: #c7d2fe; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
           <span id="selected-files-text">0 halaman siap diimport</span>
@@ -1551,7 +1522,7 @@
 
       <div class="flex items-center justify-end" style="gap: 10px; margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--border-subtle);">
         <button onclick="app.closeImportModal()" class="btn btn-elevated">Batal</button>
-        <button id="save-import-btn" onclick="app.processAndSaveImport()" disabled="" class="btn btn-primary">Simpan ke Offline</button>
+        <button id="save-import-btn" onclick="app.processAndSaveImport()" disabled class="btn btn-primary">Simpan ke Offline</button>
       </div>
     </div>
   </div>
@@ -1563,7 +1534,7 @@
         <div class="flex items-center" style="gap: 10px;">
           <div style="width: 34px; height: 34px; border-radius: 10px; background: linear-gradient(135deg, var(--accent-indigo), var(--accent-pink)); display: flex; align-items: center; justify-content: center; color: #fff;">
             <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
             </svg>
           </div>
           <div>
@@ -1573,7 +1544,7 @@
         </div>
         <button onclick="app.closeBgmLibraryModal()" class="btn btn-elevated btn-icon" style="min-width: 32px; min-height: 32px; padding: 4px;">
           <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
@@ -1583,22 +1554,24 @@
         <div class="flex items-center justify-between" style="gap: 10px; margin-bottom: 12px;">
           <div class="min-w-0">
             <span style="font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #f472b6;">Sedang Dipilih</span>
-            <div id="modal-bgm-active-name" class="truncate" style="font-size: 14px; font-weight: 700; color: #ffffff;">[Solo-Leveling] SymphonicSuite-Lv.1_128k</div>
+            <div id="modal-bgm-active-name" class="truncate" style="font-size: 14px; font-weight: 700; color: #ffffff;">Dark Dungeon &amp; Epic Tension</div>
           </div>
           <div class="flex items-center shrink-0" style="gap: 8px;">
             <button onclick="app.bgmPrevTrack()" class="btn btn-elevated btn-icon" title="Sebelumnya">
-              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" /></svg>
             </button>
-            <button id="modal-bgm-play-btn" onclick="app.bgmTogglePlay()" class="btn btn-pink" style="padding: 8px 14px; min-height: 38px;">Putar</button>
+            <button id="modal-bgm-play-btn" onclick="app.bgmTogglePlay()" class="btn btn-pink" style="padding: 8px 14px; min-height: 38px;">
+              Putar
+            </button>
             <button onclick="app.bgmNextTrack()" class="btn btn-elevated btn-icon" title="Berikutnya">
-              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"></path></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" /></svg>
             </button>
           </div>
         </div>
 
         <div class="flex items-center" style="gap: 10px;">
           <span style="font-size: 12px; color: var(--text-secondary);">Volume:</span>
-          <input id="modal-bgm-volume" type="range" min="0" max="100" value="70" oninput="app.bgmSetVolume(this.value)" class="flex-1">
+          <input id="modal-bgm-volume" type="range" min="0" max="100" value="70" oninput="app.bgmSetVolume(this.value)" class="flex-1" />
           <span id="modal-bgm-vol-label" style="font-size: 12px; font-weight: 700; color: #a5b4fc; width: 38px; text-align: right;">70%</span>
         </div>
       </div>
@@ -1606,31 +1579,7 @@
       <!-- Preset Sinematik Bawaan -->
       <div style="margin-bottom: 16px;">
         <div style="font-size: 12px; font-weight: 700; color: var(--text-secondary); margin-bottom: 8px;">3 Musik Sinematik Bawaan (100% Real-Time Tanpa Kuota)</div>
-        <div id="modal-preset-list" style="display: flex; flex-direction: column; gap: 8px;"><div class="track-row ">
-              <div class="min-w-0">
-                <div class="truncate" style="font-size: 13px; font-weight: 700; color: #fff;">🎵 Dark Dungeon &amp; Epic Tension</div>
-                <div class="truncate" style="font-size: 11px; color: var(--text-secondary);">Bass drone dalam &amp; detak ritmis aksi/hunter</div>
-              </div>
-              <span style="font-size: 11px; font-weight: 700; color: #818cf8; shrink-0;">
-                Putar
-              </span>
-            </div><div class="track-row ">
-              <div class="min-w-0">
-                <div class="truncate" style="font-size: 13px; font-weight: 700; color: #fff;">🎵 Melancholy &amp; Rainy Night</div>
-                <div class="truncate" style="font-size: 11px; color: var(--text-secondary);">Piano melankolis &amp; suara hujan malam lembut</div>
-              </div>
-              <span style="font-size: 11px; font-weight: 700; color: #818cf8; shrink-0;">
-                Putar
-              </span>
-            </div><div class="track-row ">
-              <div class="min-w-0">
-                <div class="truncate" style="font-size: 13px; font-weight: 700; color: #fff;">🎵 Royal Intrigue &amp; Mystery</div>
-                <div class="truncate" style="font-size: 11px; color: var(--text-secondary);">Pad misterius fantasi kerajaan &amp; regresi</div>
-              </div>
-              <span style="font-size: 11px; font-weight: 700; color: #818cf8; shrink-0;">
-                Putar
-              </span>
-            </div></div>
+        <div id="modal-preset-list" style="display: flex; flex-direction: column; gap: 8px;"></div>
       </div>
 
       <!-- Daftar Lagu MP3 Offline -->
@@ -1639,26 +1588,11 @@
           <span style="font-size: 12px; font-weight: 700; color: var(--text-secondary);">Koleksi Lagu Offline Saya (IndexedDB)</span>
           <label class="btn btn-primary" style="font-size: 12px; padding: 6px 12px; min-height: 32px; cursor: pointer;">
             <span>+ Unggah MP3/WAV/OGG</span>
-            <input type="file" accept="audio/*,.mp3,.wav,.ogg,.m4a" multiple="" class="hidden" onchange="app.handleAudioFilesUpload(this.files, false)">
+            <input type="file" accept="audio/*,.mp3,.wav,.ogg,.m4a" multiple class="hidden" onchange="app.handleAudioFilesUpload(this.files, false)" />
           </label>
         </div>
 
-        <div id="modal-custom-tracks-list" class="track-list-scroll"><div class="track-row active-track">
-              <div class="min-w-0 flex-1">
-                <div class="truncate" style="font-size: 13px; font-weight: 700; color: #fff;">🎧 [Solo-Leveling] SymphonicSuite-Lv.1_128k</div>
-                <div style="font-size: 11px; color: var(--text-secondary);">5.7 MB • Tersimpan Offline</div>
-              </div>
-              <div class="flex items-center shrink-0" style="gap: 8px;">
-                <span style="font-size: 11px; font-weight: 700; color: #818cf8;">
-                  Putar
-                </span>
-                <button onclick="event.stopPropagation(); app.confirmDeleteAudioTrack('audio_1795278320242_43t5', '[Solo-Leveling] SymphonicSuite-Lv.1_128k')" class="btn btn-danger-soft btn-icon" style="min-width: 30px; min-height: 30px; padding: 4px;" title="Hapus Lagu">
-                  <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
-                  </svg>
-                </button>
-              </div>
-            </div></div>
+        <div id="modal-custom-tracks-list" class="track-list-scroll"></div>
       </div>
 
       <div class="flex justify-end" style="margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border-subtle);">
@@ -1674,14 +1608,14 @@
         <div class="flex items-center" style="gap: 10px;">
           <div style="width: 34px; height: 34px; border-radius: 10px; background: var(--accent-indigo-soft); color: #818cf8; display: flex; align-items: center; justify-content: center;">
             <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
             </svg>
           </div>
           <h3 style="margin: 0; font-size: 17px; font-weight: 800;">Export Paket PWA Mandiri</h3>
         </div>
         <button onclick="app.closePwaModal()" class="btn btn-elevated btn-icon" style="min-width: 32px; min-height: 32px; padding: 4px;">
           <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
@@ -2892,7 +2826,7 @@
         this.activeObjectUrls = [];
 
         // State Import
-        this.stagedPages = [];
+        this.stagedChapters = [];
 
         // State Reader
         this.hudVisible = true;
@@ -3777,37 +3711,99 @@
       async handleSeriesSelectChange() {
         const val = document.getElementById('import-series-select').value;
         const newFields = document.getElementById('new-series-fields');
+        let nextNum = 1;
 
         if (val === '__NEW__') {
           newFields.classList.remove('hidden');
-          document.getElementById('import-chapter-num').value = 1;
-          document.getElementById('import-chapter-title').value = 'Chapter 1';
         } else {
           newFields.classList.add('hidden');
           const chapters = await this.db.getChaptersBySeries(val);
-          const nextNum = chapters.length > 0
+          nextNum = chapters.length > 0
             ? Math.floor(Math.max(...chapters.map(c => c.chapterNumber))) + 1
             : 1;
-          document.getElementById('import-chapter-num').value = nextNum;
-          document.getElementById('import-chapter-title').value = `Chapter ${nextNum}`;
+        }
+
+        document.getElementById('import-chapter-num').value = nextNum;
+        document.getElementById('import-chapter-title').value = `Chapter ${nextNum}`;
+
+        // Jika sudah memilih banyak ZIP, perbarui nomor cadangan (fallback) untuk file tanpa nomor eksplisit
+        if (this.stagedChapters.length > 1) {
+          this.stagedChapters.forEach((ch, idx) => {
+            if (!ch.hasExplicitNum) {
+              ch.chapterNumber = nextNum + idx;
+            }
+          });
+          this.renderBatchChaptersPreview();
         }
       }
 
       clearSelectedFiles() {
-        this.stagedPages = [];
+        this.stagedChapters = [];
         document.getElementById('file-input-images').value = '';
         document.getElementById('file-input-folder').value = '';
         document.getElementById('file-input-archive').value = '';
+        document.getElementById('single-chapter-fields').classList.remove('hidden');
+        document.getElementById('batch-chapters-preview').classList.add('hidden');
+        document.getElementById('batch-chapters-preview').innerHTML = '';
         document.getElementById('selected-files-summary').classList.add('hidden');
         document.getElementById('import-progress-box').classList.add('hidden');
         document.getElementById('save-import-btn').disabled = true;
       }
 
-      isValidImageFilename(name) {
-        if (!name) return false;
-        const lower = name.toLowerCase();
-        if (lower.includes('__macosx') || lower.split('/').pop().startsWith('.')) return false;
-        return /\.(jpg|jpeg|png|webp|gif|avif|bmp)$/i.test(lower);
+      parseChapterMetaFromFilename(filename, fallbackNum) {
+        const cleanName = filename.replace(/\.(cbz|zip)$/i, '').trim();
+        const explicitMatch = cleanName.match(/(?:ch(?:apter)?|ep(?:isode)?|bab|vol\.?\s*\d+\s*ch(?:apter)?|#)\s*0*(\d+(?:\.\d+)?)/i);
+        let detectedNum = null;
+
+        if (explicitMatch) {
+          detectedNum = parseFloat(explicitMatch[1]);
+        } else {
+          const numberMatches = cleanName.match(/(\d+(?:\.\d+)?)/g);
+          if (numberMatches && numberMatches.length > 0) {
+            detectedNum = parseFloat(numberMatches[numberMatches.length - 1]);
+          }
+        }
+
+        const hasExplicitNum = detectedNum !== null && !isNaN(detectedNum);
+        return {
+          chapterNumber: hasExplicitNum ? detectedNum : fallbackNum,
+          title: cleanName || `Chapter ${fallbackNum}`,
+          hasExplicitNum
+        };
+      }
+
+      renderBatchChaptersPreview() {
+        const container = document.getElementById('batch-chapters-preview');
+        if (!container) return;
+
+        if (this.stagedChapters.length <= 1) {
+          container.classList.add('hidden');
+          container.innerHTML = '';
+          return;
+        }
+
+        container.classList.remove('hidden');
+        container.innerHTML = `
+          <div style="font-size: 11px; font-weight: 700; color: var(--text-secondary); display: flex; justify-content: space-between;">
+            <span>Daftar Chapter Terdeteksi (Bisa Diedit)</span>
+            <span>${this.stagedChapters.length} File ZIP/CBZ</span>
+          </div>
+        `;
+
+        this.stagedChapters.forEach((ch, idx) => {
+          const row = document.createElement('div');
+          row.style.cssText = 'display: grid; grid-template-columns: 74px 1fr auto; gap: 8px; align-items: center;';
+          row.innerHTML = `
+            <input type="number" step="0.1" value="${ch.chapterNumber}"
+              onchange="app.stagedChapters[${idx}].chapterNumber = parseFloat(this.value) || ${idx + 1}"
+              class="input-field" style="padding: 6px 8px; font-size: 12px;" title="No. Chapter" />
+            <input type="text" value="${this.escapeHtml(ch.title)}"
+              onchange="app.stagedChapters[${idx}].title = this.value.trim() || 'Chapter ${ch.chapterNumber}'"
+              class="input-field" style="padding: 6px 10px; font-size: 12px;" title="Judul Chapter" />
+            <span style="font-size: 11px; color: #a5b4fc; font-weight: 600; white-space: nowrap;">${ch.pages.length} hal</span>
+          `;
+          container.appendChild(row);
+        });
       }
 
       async handleFilesSelected(fileList, sourceType) {
@@ -3819,26 +3815,115 @@
         const progressBar = document.getElementById('import-progress-bar');
 
         progressBox.classList.remove('hidden');
-        progressBar.style.width = '10%';
-        percentLabel.textContent = '10%';
+        progressBar.style.width = '5%';
+        percentLabel.textContent = '5%';
 
         try {
-          let extractedItems = [];
+          const baseChapterNum = parseFloat(document.getElementById('import-chapter-num').value) || 1;
 
           if (sourceType === 'archive') {
-            const archiveFile = fileList[0];
-            statusLabel.textContent = `Mengekstrak ${archiveFile.name} (Native DecompressionStream)...`;
+            const archiveFiles = Array.from(fileList).filter(f => /\.(cbz|zip)$/i.test(f.name));
+            if (archiveFiles.length === 0) {
+              this.showToast('Pilih file berformat .ZIP atau .CBZ.', 'error');
+              progressBox.classList.add('hidden');
+              return;
+            }
 
-            extractedItems = await NativeZipExtractor.extractImages(archiveFile, (pct) => {
-              progressBar.style.width = `${pct}%`;
-              percentLabel.textContent = `${pct}%`;
-            });
+            // Urutkan nama file ZIP secara alami (Ch 1.zip, Ch 2.zip, ..., Ch 10.zip)
+            archiveFiles.sort((a, b) => this.naturalCollator.compare(a.name, b.name));
 
-            const cleanBaseName = archiveFile.name.replace(/\.(cbz|zip)$/i, '');
-            if (document.getElementById('import-chapter-title').value === 'Chapter 1') {
-              document.getElementById('import-chapter-title').value = cleanBaseName;
+            if (archiveFiles.length === 1) {
+              // MODE 1 ARSIP ZIP/CBZ
+              document.getElementById('single-chapter-fields').classList.remove('hidden');
+              document.getElementById('batch-chapters-preview').classList.add('hidden');
+
+              const archiveFile = archiveFiles[0];
+              statusLabel.textContent = `Mengekstrak ${archiveFile.name}...`;
+
+              const extractedItems = await NativeZipExtractor.extractImages(archiveFile, (pct) => {
+                progressBar.style.width = `${pct}%`;
+                percentLabel.textContent = `${pct}%`;
+              });
+
+              if (extractedItems.length === 0) {
+                this.showToast('Tidak ditemukan file gambar valid di dalam arsip.', 'error');
+                progressBox.classList.add('hidden');
+                return;
+              }
+
+              const meta = this.parseChapterMetaFromFilename(archiveFile.name, baseChapterNum);
+              if (meta.hasExplicitNum) {
+                document.getElementById('import-chapter-num').value = meta.chapterNumber;
+              }
+              if (/^Chapter \d+(\.\d+)?$/i.test(document.getElementById('import-chapter-title').value.trim())) {
+                document.getElementById('import-chapter-title').value = meta.title;
+              }
+
+              this.stagedChapters = [{
+                chapterNumber: meta.chapterNumber,
+                title: meta.title,
+                pages: extractedItems,
+                hasExplicitNum: meta.hasExplicitNum
+              }];
+
+              document.getElementById('selected-files-summary').classList.remove('hidden');
+              document.getElementById('selected-files-text').textContent =
+                `${extractedItems.length} halaman siap (${extractedItems[0].filename} → ${extractedItems[extractedItems.length - 1].filename})`;
+              document.getElementById('save-import-btn').disabled = false;
+              statusLabel.textContent = 'Siap disimpan ke IndexedDB!';
+            } else {
+              // MODE BANYAK ARSIP ZIP/CBZ SEKALIGUS (BATCH)
+              document.getElementById('single-chapter-fields').classList.add('hidden');
+              const batchList = [];
+              let totalPages = 0;
+              let skippedCount = 0;
+
+              for (let i = 0; i < archiveFiles.length; i++) {
+                const archiveFile = archiveFiles[i];
+                statusLabel.textContent = `Mengekstrak (${i + 1}/${archiveFiles.length}): ${archiveFile.name}...`;
+
+                const extractedItems = await NativeZipExtractor.extractImages(archiveFile, (pct) => {
+                  const overallPct = Math.round(((i + pct / 100) / archiveFiles.length) * 100);
+                  progressBar.style.width = `${overallPct}%`;
+                  percentLabel.textContent = `${overallPct}%`;
+                });
+
+                if (extractedItems.length === 0) {
+                  skippedCount++;
+                  continue;
+                }
+
+                const meta = this.parseChapterMetaFromFilename(archiveFile.name, baseChapterNum + i);
+                batchList.push({
+                  chapterNumber: meta.chapterNumber,
+                  title: meta.title,
+                  pages: extractedItems,
+                  hasExplicitNum: meta.hasExplicitNum
+                });
+                totalPages += extractedItems.length;
+              }
+
+              if (batchList.length === 0) {
+                this.showToast('Tidak ada gambar valid ditemukan di semua file ZIP yang dipilih.', 'error');
+                progressBox.classList.add('hidden');
+                return;
+              }
+
+              this.stagedChapters = batchList;
+              this.renderBatchChaptersPreview();
+
+              document.getElementById('selected-files-summary').classList.remove('hidden');
+              document.getElementById('selected-files-text').textContent =
+                `${batchList.length} chapter (${totalPages} halaman) siap diimport` +
+                (skippedCount > 0 ? ` • ${skippedCount} arsip kosong dilewati` : '');
+              document.getElementById('save-import-btn').disabled = false;
+              statusLabel.textContent = `${batchList.length} chapter siap disimpan ke IndexedDB!`;
             }
           } else {
+            // MODE PILIH GAMBAR / 1 FOLDER CHAPTER
+            document.getElementById('single-chapter-fields').classList.remove('hidden');
+            document.getElementById('batch-chapters-preview').classList.add('hidden');
+
             statusLabel.textContent = 'Mengurutkan gambar secara alami...';
             const validFiles = Array.from(fileList).filter(f => this.isValidImageFilename(f.webkitRelativePath || f.name));
 
@@ -3848,34 +3933,40 @@
               return this.naturalCollator.compare(nameA, nameB);
             });
 
-            extractedItems = validFiles.map(file => ({
+            if (validFiles.length === 0) {
+              this.showToast('Tidak ditemukan file gambar valid (JPG/PNG/WEBP).', 'error');
+              progressBox.classList.add('hidden');
+              return;
+            }
+
+            const extractedItems = validFiles.map(file => ({
               filename: file.name,
               blob: file
             }));
 
-            if (sourceType === 'folder' && validFiles.length > 0 && validFiles[0].webkitRelativePath) {
+            if (sourceType === 'folder' && validFiles[0].webkitRelativePath) {
               const folderName = validFiles[0].webkitRelativePath.split('/')[0];
               if (folderName) {
                 document.getElementById('import-chapter-title').value = folderName;
               }
             }
 
+            this.stagedChapters = [{
+              chapterNumber: baseChapterNum,
+              title: document.getElementById('import-chapter-title').value.trim() || `Chapter ${baseChapterNum}`,
+              pages: extractedItems,
+              hasExplicitNum: false
+            }];
+
             progressBar.style.width = '100%';
             percentLabel.textContent = '100%';
-          }
 
-          if (extractedItems.length === 0) {
-            this.showToast('Tidak ditemukan file gambar valid (JPG/PNG/WEBP).', 'error');
-            progressBox.classList.add('hidden');
-            return;
+            document.getElementById('selected-files-summary').classList.remove('hidden');
+            document.getElementById('selected-files-text').textContent =
+              `${extractedItems.length} halaman siap (${extractedItems[0].filename} → ${extractedItems[extractedItems.length - 1].filename})`;
+            document.getElementById('save-import-btn').disabled = false;
+            statusLabel.textContent = 'Siap disimpan ke IndexedDB!';
           }
-
-          this.stagedPages = extractedItems;
-          document.getElementById('selected-files-summary').classList.remove('hidden');
-          document.getElementById('selected-files-text').textContent =
-            `${extractedItems.length} halaman siap (${extractedItems[0].filename} → ${extractedItems[extractedItems.length - 1].filename})`;
-          document.getElementById('save-import-btn').disabled = false;
-          statusLabel.textContent = 'Siap disimpan ke IndexedDB!';
         } catch (err) {
           console.error('Error importing files:', err);
           this.showToast('Gagal memproses file: ' + err.message, 'error');
@@ -3884,16 +3975,28 @@
       }
 
       async processAndSaveImport() {
-        if (this.stagedPages.length === 0) return;
+        if (this.stagedChapters.length === 0) return;
 
         const saveBtn = document.getElementById('save-import-btn');
+        const progressBox = document.getElementById('import-progress-box');
+        const statusLabel = document.getElementById('import-status-label');
+        const percentLabel = document.getElementById('import-percent-label');
+        const progressBar = document.getElementById('import-progress-bar');
+
         saveBtn.disabled = true;
         saveBtn.textContent = 'Menyimpan...';
+        progressBox.classList.remove('hidden');
 
         try {
           let seriesId = document.getElementById('import-series-select').value;
-          const chapterNum = parseFloat(document.getElementById('import-chapter-num').value) || 1;
-          const chapterTitle = (document.getElementById('import-chapter-title').value || `Chapter ${chapterNum}`).trim();
+
+          // Jika hanya 1 chapter, sinkronkan nilai terbaru dari input form tunggal
+          if (this.stagedChapters.length === 1) {
+            const singleNum = parseFloat(document.getElementById('import-chapter-num').value) || 1;
+            const singleTitle = (document.getElementById('import-chapter-title').value || `Chapter ${singleNum}`).trim();
+            this.stagedChapters[0].chapterNumber = singleNum;
+            this.stagedChapters[0].title = singleTitle;
+          }
 
           if (seriesId === '__NEW__') {
             const newTitle = document.getElementById('import-new-series-title').value.trim();
@@ -3911,7 +4014,7 @@
               title: newTitle,
               author: 'Koleksi Offline',
               description: newDesc || 'Manhwa offline yang diimport ke perangkat.',
-              coverBlob: this.stagedPages[0].blob,
+              coverBlob: this.stagedChapters[0].pages[0].blob,
               bgmTrackId: '__GLOBAL__',
               bgmAutoPlay: false,
               createdAt: Date.now(),
@@ -3921,30 +4024,48 @@
             const existing = await this.db.getSeries(seriesId);
             if (existing) {
               existing.updatedAt = Date.now();
-              if (!existing.coverBlob) existing.coverBlob = this.stagedPages[0].blob;
+              if (!existing.coverBlob) existing.coverBlob = this.stagedChapters[0].pages[0].blob;
               await this.db.saveSeries(existing);
             }
           }
 
-          const chapterId = 'ch_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
-          await this.db.saveChapterWithPages({
-            id: chapterId,
-            seriesId: seriesId,
-            chapterNumber: chapterNum,
-            title: chapterTitle,
-            pageCount: this.stagedPages.length,
-            progress: 0,
-            lastReadAt: null,
-            createdAt: Date.now()
-          }, this.stagedPages);
+          const totalChapters = this.stagedChapters.length;
+          let totalPagesSaved = 0;
+
+          for (let i = 0; i < totalChapters; i++) {
+            const chItem = this.stagedChapters[i];
+            const pct = Math.round(((i + 1) / totalChapters) * 100);
+            statusLabel.textContent = `Menyimpan (${i + 1}/${totalChapters}): ${chItem.title}...`;
+            progressBar.style.width = `${pct}%`;
+            percentLabel.textContent = `${pct}%`;
+
+            const chapterId = 'ch_' + Date.now() + '_' + i + '_' + Math.random().toString(36).slice(2, 6);
+            await this.db.saveChapterWithPages({
+              id: chapterId,
+              seriesId: seriesId,
+              chapterNumber: chItem.chapterNumber,
+              title: chItem.title,
+              pageCount: chItem.pages.length,
+              progress: 0,
+              lastReadAt: null,
+              createdAt: Date.now() + i
+            }, chItem.pages);
+
+            totalPagesSaved += chItem.pages.length;
+            chItem.pages = null; // Bebaskan memori Blob setelah tersimpan ke IndexedDB
+          }
+
+          const summaryMsg = totalChapters === 1
+            ? `Berhasil menyimpan "${this.stagedChapters[0].title}" (${totalPagesSaved} halaman)!`
+            : `Berhasil menyimpan ${totalChapters} chapter (${totalPagesSaved} halaman) sekaligus!`;
 
           this.closeImportModal();
           await this.refreshLibraryData();
           await this.updateStorageUsage();
-          this.showToast(`Berhasil menyimpan "${chapterTitle}" (${this.stagedPages.length} halaman)!`, 'success');
+          this.showToast(summaryMsg, 'success');
         } catch (err) {
           console.error('Save import error:', err);
-          this.showToast('Gagal menyimpan ke IndexedDB.', 'error');
+          this.showToast('Gagal menyimpan ke IndexedDB: ' + err.message, 'error');
         } finally {
           saveBtn.disabled = false;
           saveBtn.textContent = 'Simpan ke Offline';
@@ -4510,13 +4631,5 @@ self.addEventListener('fetch', (event) => {
       app = new ManhwaReaderApp();
     });
   </script>
-
-<script>
-          if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-              navigator.serviceWorker.register('./sw.js')
-                .then(() => console.log('ManhwaKu Service Worker aktif!'))
-                .catch((err) => console.warn('Registrasi SW dilewati:', err));
-            });
-          }
-        </script></body></html>
+</body>
+</html>
